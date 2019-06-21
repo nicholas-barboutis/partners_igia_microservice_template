@@ -1,44 +1,59 @@
-﻿# Micro Service Template Creation and Installation
+﻿# Microservice template creation and installation
 
-The purpose of this project is to create a dotnet new template and package it for publishing to nuget. The template is published at <https://www.nuget.org/packages/igia-micro_service_template/>.
+The purpose of this project is to create a dotnet new template and package it for publishing to NuGet. The template is published at <https://www.nuget.org/packages/partners_igia_microservice_template/>.
 
 For more information on dotnet new templates see <https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates>.
 
-For more information on packaging the dotnet template for nuget see <https://docs.microsoft.com/en-us/dotnet/core/tutorials/create-custom-template>.
+For more information on igia see <https://igia.github.io>.
+
+For more information on packaging the dotnet template for NuGet see <https://docs.microsoft.com/en-us/dotnet/core/tutorials/create-custom-template>.
+
+For more information on .NET Core see <https://docs.microsoft.com/en-us/dotnet/core/get-started>.
 
 ## License
 
-[License](LICENSE.md)
+The project is made available under the [MIT License](LICENSE.md).
 
-## Creating a nuget package with Visual Studio for Mac
+## Using this NuGet template
+
+For instructions on using this template see this [README](micro_service_template_nuget/content/src/micro_service_template/README.md)
+
+
+## Creating a NuGet package with Visual Studio for Mac
 
 ### Prerequisites
 
-| Requirement       | Required | Description                                                  |
-| ----------------- | -------- | ------------------------------------------------------------ |
-| dotnet cli        | x        | Used to create the nuget package.                            |
-| Visual Studio Mac | x        | Helps with editing and creating a customized nuget package.  |
+| Requirement              | Required | Description                                        |
+| ------------------------ | -------- | -------------------------------------------------- |
+| dotnet cli               | x        | Used to create the NuGet package                   |
+| Visual Studio Mac        | x        | Required for editing and creating a NuGet package. |
+| .Net Core 2.2 or greater | x        | Required .NET core framework.                      |
 
-To create your own customized template use the following instructions:
 
-1. Open this project in Visual Studio for Mac. 
-2. Edit as desired.
-3. Update the version number on the solution.  Note: This version number is shared with the solution, the project and also nuget package.
-4. When ready to create the nuget package. This will automatically install the package using dotnet cli.
-5. Publish the nuget package. For instruction, see <https://docs.microsoft.com/en-us/nuget/create-packages/publish-a-package>
-
-## Installing the Template
+## Installing the template
 
 In order to use any dotnet new template it must first be installed. To install this template run the following command.
 
 ```bash
-dotnet new -i partners_igia_microservice_template
+dotnet new -i org.partners.igia.microservice_template
 ```
 
-## Uninstalling or Updating the template
+## Uninstalling or updating the template
 
 In order to update the template, first uninstall the existing template then run the install command again.
 
 ```bash
-dotnet new -u partners_igia_microservice_template
-dotnet new -i partners_igia_microservice_template
+dotnet new -u org.partners.igia.microservice_template
+dotnet new -i org.partners.igia.microservice_template
+```
+
+## Customizing this template
+
+While the template can be used out of the box, you can also further customize it for your needs. To create a customized template, use the following instructions:
+
+1. Download the project.
+2. Open the project in Visual Studio for Mac.
+3. Edit the project as desired.
+4. Once completed, create the NuGet package. (This will automatically install the package locally using dotnet cli)
+5. Before publishing to NuGet, update the version number in the solution.  Note: This version number is automatically shared with the solution, project and NuGet package.
+6. Publish the NuGet package. For instructions, see <https://docs.microsoft.com/en-us/nuget/create-packages/publish-a-package>
