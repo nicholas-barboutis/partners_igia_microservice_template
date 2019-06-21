@@ -143,7 +143,7 @@ namespace Framework
                 status += error + Environment.NewLine;
             }
 
-            status += String.Format("\tMicro Service Address = {0} " + Environment.NewLine , ip_address);
+            status += String.Format("\tMicroservice Address = {0} " + Environment.NewLine , ip_address);
             return is_ok;
         }
     }

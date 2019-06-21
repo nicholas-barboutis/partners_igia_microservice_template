@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <Authors>Nicholas Barboutis</Authors>
     <Company>Partners Healtcare</Company>
-    <Product>Micro Service Template</Product>
+    <Product>Microservice Template</Product>
     <Version>2.2.1.4</Version>
   </PropertyGroup>
 

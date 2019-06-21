@@ -2,7 +2,7 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "Nicholas Barboutis",
     "classifications": [ "Web", "WebAPI", "igia", "jHipster", "Swagger" ],
-    "name": "Micro Service template for the igia platform.",
+    "name": "Microservice template for the igia platform.",
     "identity": "partners_igia_microservice_template",
     "shortName": "igia_micro",
     "tags": {

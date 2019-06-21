@@ -1,9 +1,9 @@
-version: '3.5'
+﻿version: '3.5'
 
 services:
   jhipster-registry:
     container_name: jhipster-registry
-    image: jhipster/jhipster-registry:v3.2.4
+    image: jhipster/jhipster-registry:latest
     # image: jhipster/jhipster-registry:latest
     volumes:
       - ./central-server-config:/central-config
@@ -22,7 +22,7 @@ services:
 
   jhipster-gateway:
     container_name: jhipster-gateway
-    image: jhipster/jhipster-sample-app-gateway
+    image: jhipster/jhipster-sample-app-gateway:latest
     ports:
       - "8080:8080"
     environment:

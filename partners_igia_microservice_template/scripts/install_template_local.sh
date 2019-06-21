@@ -1,0 +1,20 @@
+#!/bin/bash
+PROJECT_DIRECTORY=$1
+PROJECT_CONFIG=$2
+PACKAGE_NAME=$3
+PACKAGE_VERSION=$4
+NUPKG=$PACKAGE_NAME.$PACKAGE_VERSION.nupkg
+PKG=$PROJECT_DIRECTORY/bin/$PROJECT_CONFIG/$NUPKG
+
+echo "PROJECT_DIRECTORY"=$PROJECT_DIRECTORY
+echo "PROJECT_CONFIG"=$PROJECT_CONFIG
+echo "NUPKG="$NUPKG
+echo "PKG"=$PKG
+echo ""
+echo ""
+echo "dotnet new -u $PACKAGE_NAME"
+dotnet new -u $PACKAGE_NAME
+echo ""
+echo ""
+echo "dotnet new -i $PKG"
+dotnet new -i $PKG
