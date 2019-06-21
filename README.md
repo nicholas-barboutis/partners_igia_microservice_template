@@ -42,4 +42,3 @@ In order to update the template, first uninstall the existing template then run 
 ```bash
 dotnet new -u partners_igia_microservice_template
 dotnet new -i partners_igia_microservice_template
-ddd
