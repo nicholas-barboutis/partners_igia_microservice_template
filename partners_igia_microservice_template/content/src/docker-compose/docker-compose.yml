@@ -1,0 +1,8 @@
+﻿version: '3.4'
+
+services:
+  microservice_template:
+    image: ${DOCKER_REGISTRY-}microservicetemplate
+    build:
+      context: .
+      dockerfile: microservice_template/Dockerfile

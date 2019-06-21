@@ -33,6 +33,49 @@
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\" />
+    <Folder Include="content\.template_config\" />
+    <Folder Include="content\src\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\.template_config\template.json" />
+    <None Include="content\src\docker-compose\docker-compose.dcproj" />
+    <None Include="content\src\docker-compose\docker-compose.override.yml" />
+    <None Include="content\src\docker-compose\docker-compose.yml" />
+    <None Include="content\src\docker-compose-dockerfile\Dockerfile" />
+    <None Include="content\src\microservice_template\Controllers\ValuesController.cs" />
+    <None Include="content\src\microservice_template\Framework\Configuration_Helper.cs" />
+    <None Include="content\src\microservice_template\Framework\Exception_Helper.cs" />
+    <None Include="content\src\microservice_template\Framework\HIP_Helper.cs" />
+    <None Include="content\src\microservice_template\Framework\Service_Config.cs" />
+    <None Include="content\src\microservice_template\Framework\String_Helper.cs" />
+    <None Include="content\src\microservice_template\Services\Values\ValuesService.cs" />
+    <None Include="content\src\microservice_template\appsettings.Development.json" />
+    <None Include="content\src\microservice_template\appsettings.json" />
+    <None Include="content\src\microservice_template\appsettings.Standalone.json" />
+    <None Include="content\src\microservice_template\Program.cs" />
+    <None Include="content\src\microservice_template\README.md" />
+    <None Include="content\src\microservice_template\Startup.cs" />
+    <None Include="content\src\microservice_template\StartupHip.cs" />
+    <None Include="content\src\microservice_template\web.config" />
+    <None Include="content\src\os\mac\docker\docker_deploy\central-server-config\docker-config\application.yml" />
+    <None Include="content\src\os\mac\docker\docker_deploy\docker-compose.yml" />
+    <None Include="content\src\os\mac\docker\docker_deploy\docker-compose-jhipster.yml" />
+    <None Include="content\src\os\mac\docker\docker_deploy\Dockerfile" />
+    <None Include="content\src\os\mac\docker\scripts\docker_deploy.sh" />
+    <None Include="content\src\os\mac\docker\scripts\docker_jhipster.sh" />
+    <None Include="content\src\os\mac\docker\scripts\docker_push.sh" />
+    <None Include="content\src\os\mac\project\micro_service_template.csproj" />
+    <None Include="content\src\os\mac\setup\setup.sh" />
+    <None Include="content\src\os\mac\solution\micro_service_template.sln" />
+    <None Include="content\src\os\win\docker\scripts\docker_deploy.ps1" />
+    <None Include="content\src\os\win\docker\scripts\docker_jhipster.ps1" />
+    <None Include="content\src\os\win\docker\scripts\docker_push.ps1" />
+    <None Include="content\src\os\win\project\micro_service_template.csproj" />
+    <None Include="content\src\os\win\properties\launchSettings.json" />
+    <None Include="content\src\os\win\solution\micro_service_template.sln" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
 </Project>

@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:55557/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "microservice_template": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "SPRING_CLOUD_CONFIG_LABEL": "master",
+        "SPRING_APPLICATION_NAME": "microservice_template",
+        "EUREKA_INSTANCE_PORT": "9001",
+        "EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE": "http://[username]:[password]@localhost:8761/eureka ",
+        "SPRING_CLOUD_CONFIG_ENV": "prod",
+        "SPRING_CLOUD_CONFIG_URI": "http://[username]:[password]@localhost:8761/config",
+        "SPRING_PROFILES_ACTIVE": "prod,swagger",
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "microservice_template_standalone": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/values",
+      "environmentVariables": {
+        "CONFIGURATION_NAME": "STANDALONE",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "PORT": "9000"
+      },
+      "applicationUrl": "http://localhost:5000/"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+﻿{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Nicholas Barboutis",
+    "classifications": [ "Web", "WebAPI", "igia", "jHipster", "Swagger" ],
+    "name": "Micro Service template for the igia platform.",
+    "identity": "partners_igia_microservice_template",
+    "shortName": "igia_micro",
+    "tags": {
+        "language": "C#"
+    },
+    "sourceName": "microservice_template",
+    "preferNameDirectory": true,
+    "symbols": {
+        "os": {
+            "type": "parameter",
+            "datatype": "choice",
+            "defaultValue": "mac",
+            "choices": [
+                {
+                    "choice": "mac",
+                    "description": "Create Template for Visual Studio for Mac."
+                },
+                {
+                    "choice": "win",
+                    "description": "Create Template for Visual Studio."
+                }
+            ]
+        },
+        "docker": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false"
+        },
+        "proj_guid": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "project_guid",
+            "parameters": {
+                "format": "D"
+            }
+        },
+        "guid_upper": {
+            "type": "generated",
+            "generator": "casing",
+            "parameters": {
+                "source": "project_guid",
+                "toLower": false
+            }
+        }
+    },
+    "sources": [
+        {
+            "source": "./src/os/win/properties/",
+            "target": "./microservice_template/Properties/",
+            "condition": "(os == \"win\")"
+        },
+        {
+            "source": "./src/os/win/docker/",
+            "target": "./microservice_template/Docker_Support/",
+            "condition": "(os == \"win\" && docker == \"true\")"
+        },
+        {
+            "source": "./src/os/win/project/",
+            "target": "./microservice_template/",
+            "condition": "(os == \"win\")"
+        },
+        {
+            "source": "./src/os/win/solution/",
+            "target": "./",
+            "condition": "(os == \"win\")"
+        },
+        {
+            "source": "./src/os/mac/docker/",
+            "target": "./microservice_template/Docker_Support/",
+            "condition": "(os == \"mac\" && docker == \"true\")"
+        },
+        {
+            "source": "./src/os/mac/setup/",
+            "target": ".",
+            "condition": "(os == \"mac\" && docker == \"true\")"
+        },
+        {
+            "source": "./src/os/mac/solution/",
+            "target": "./",
+            "condition": "(os == \"mac\")"
+        },
+        {
+            "source": "./src/os/mac/project",
+            "target": "./microservice_template/",
+            "condition": "(os == \"mac\")"
+        },
+        {
+            "source": "./src/microservice_template/",
+            "target": "./microservice_template/"
+        }
+    ],
+    "postActions": [
+        {
+            "actionId": "3A7C4B45-1F5D-4A30-959A-51B88E82B5D2",
+            "condition": "(os == \"mac\" && docker == \"true\")",
+            "args": {
+                "redirectStandardOutput": "true",
+                "executable": "chmod",
+                "args": "+x ./setup.sh"
+            },
+            "manualInstructions": [
+                {
+                    "text": "Run 'setup.sh'"
+                }
+            ],
+            "continueOnError": false,
+            "description ": "setups the project by calling setup.cmd"
+        }
+    ],
+    "primaryOutputs": [
+        {
+            "path": "microservice_template.sln"
+        },
+        {
+            "path": "microservice_template/microservice_template.csproj"
+        }
+    ]
+}
