@@ -11,6 +11,22 @@
     "sourceName": "microservice_template",
     "preferNameDirectory": true,
     "symbols": {
+        "id_solution": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "id_solution",
+            "parameters": {
+                "format": "B"
+            }
+        },
+        "id_project": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "id_project",
+            "parameters": {
+                "format": "B"
+            }
+        },
         "os": {
             "type": "parameter",
             "datatype": "choice",
@@ -49,11 +65,6 @@
         }
     },
     "sources": [
-        {
-            "source": "./src/os/win/properties/",
-            "target": "./microservice_template/Properties/",
-            "condition": "(os == \"win\")"
-        },
         {
             "source": "./src/os/win/docker/",
             "target": "./microservice_template/Docker_Support/",

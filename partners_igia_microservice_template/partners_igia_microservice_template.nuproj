@@ -15,7 +15,7 @@
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>partners_igia_microservice_template</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <ReleaseVersion>1.0.0</ReleaseVersion>
+    <ReleaseVersion>1.0.0.0</ReleaseVersion>
     <PackageVersion>$(ReleaseVersion)</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -122,13 +122,13 @@
     <None Include="content\src\os\mac\docker\scripts\docker_push.sh">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
-    <None Include="content\src\os\mac\project\micro_service_template.csproj">
+    <None Include="content\src\os\mac\project\microservice_template.csproj">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="content\src\os\mac\setup\setup.sh">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
-    <None Include="content\src\os\mac\solution\micro_service_template.sln">
+    <None Include="content\src\os\mac\solution\microservice_template.sln">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="content\src\os\win\docker\scripts\docker_deploy.ps1">
@@ -140,13 +140,13 @@
     <None Include="content\src\os\win\docker\scripts\docker_push.ps1">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
-    <None Include="content\src\os\win\project\micro_service_template.csproj">
+    <None Include="content\src\os\win\project\microservice_template.csproj">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="content\src\os\win\properties\launchSettings.json">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
-    <None Include="content\src\os\win\solution\micro_service_template.sln">
+    <None Include="content\src\os\win\solution\microservice_template.sln">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="scripts\install_template_local.sh" />
