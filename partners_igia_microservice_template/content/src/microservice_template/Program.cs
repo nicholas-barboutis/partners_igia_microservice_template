@@ -22,16 +22,21 @@ namespace microservice_template
             string name = Assembly.GetExecutingAssembly().GetName().Name;
             string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             string start_time = DateTime.Now.ToString();
-            string config_name = String_Helper.CheckString(Environment.GetEnvironmentVariable("CONFIGURATION_NAME"), "DEFAULT");
+            string environment = String_Helper.CheckString(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT"), "Production");
+			string config_name = "DEFAULT";
 
+			if (environment == "Development")
+			{
+				string config_name = String_Helper.CheckString(Environment.GetEnvironmentVariable("CONFIGURATION_NAME"), "STANDALONE");
+			}
 
-            if (args.Length == 1)
-            {
-                if (args[0].ToLower() == "standalone")
-                {
-                    config_name = "STANDALONE";
-                }
-            }
+			if (args.Length == 1)
+			{
+				if (args[0].ToLower() == "standalone")
+				{
+					config_name = "STANDALONE";
+				}
+			}
 
             Console.WriteLine("Executing:" + name + ":" + version + " config:" + config_name + " at " + start_time + System.Environment.NewLine);
             switch (config_name)
