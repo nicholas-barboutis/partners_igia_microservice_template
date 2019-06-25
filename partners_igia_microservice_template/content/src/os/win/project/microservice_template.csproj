@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <Product>Microservice Template</Product>
-    <Version>1.0.0.0</Version>
+    <Product>Microservice Template</Product>    
   </PropertyGroup>
 
   <ItemGroup>        
