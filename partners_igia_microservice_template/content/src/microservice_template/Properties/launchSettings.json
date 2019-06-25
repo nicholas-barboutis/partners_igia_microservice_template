@@ -15,7 +15,7 @@
       "launchUrl": "api/values",
       "environmentVariables": {
         "SPRING_CLOUD_CONFIG_ENV": "prod",
-        "EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE": "http://[username]:[password]@localhost:8761/eureka ",
+        "EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE": "http://admin:admin@localhost:8761/eureka ",
         "PORT": "9000",
         "CONFIGURATION_NAME": "STANDALONE",
         "EUREKA_INSTANCE_PORT": "9001",
