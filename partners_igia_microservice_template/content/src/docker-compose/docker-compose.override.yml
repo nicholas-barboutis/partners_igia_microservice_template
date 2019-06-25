@@ -1,0 +1,10 @@
+﻿version: '3.4'
+
+services:
+  microservice_template:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - CONFIGURATION_NAME=STANDALONE
+      - PORT=8085
+    ports:
+      - "8085"

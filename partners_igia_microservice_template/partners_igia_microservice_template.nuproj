@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CEB32D9C-6FB9-43B0-B946-EE41BA86CDA5}</ProjectGuid>
-    <Description>Partners Igia microservice template</Description>
+    <Description>Partners igia microservice template</Description>
     <PackageId>partners_igia_microservice_template</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
-    <Authors>nb086</Authors>
+    <Authors>Nicholas Barboutis</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
@@ -16,6 +15,8 @@
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>partners_igia_microservice_template</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ReleaseVersion>1.0.0.0</ReleaseVersion>
+    <PackageVersion>$(ReleaseVersion)</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,6 +34,130 @@
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\" />
+    <Folder Include="content\.template_config\" />
+    <Folder Include="content\src\" />
+    <Folder Include="scripts\" />
+    <Folder Include="content\src\microservice_template\Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="content\.template_config\template.json">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\docker-compose\docker-compose.dcproj">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\docker-compose\docker-compose.override.yml">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\docker-compose\docker-compose.yml">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\docker-compose-dockerfile\Dockerfile">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Controllers\ValuesController.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Framework\Configuration_Helper.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Framework\Exception_Helper.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Framework\HIP_Helper.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Framework\Service_Config.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Framework\String_Helper.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Services\Values\ValuesService.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\appsettings.Development.json">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\appsettings.json">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\appsettings.Standalone.json">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Program.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\README.md">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\Startup.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\StartupHip.cs">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\microservice_template\web.config">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\docker\docker_deploy\central-server-config\docker-config\application.yml">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\docker\docker_deploy\docker-compose.yml">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\docker\docker_deploy\docker-compose-jhipster.yml">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\docker\docker_deploy\Dockerfile">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\docker\scripts\docker_deploy.sh">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\docker\scripts\docker_jhipster.sh">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\docker\scripts\docker_push.sh">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\project\microservice_template.csproj">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\setup\setup.sh">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\mac\solution\microservice_template.sln">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\win\docker\scripts\docker_deploy.ps1">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\win\docker\scripts\docker_jhipster.ps1">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\win\docker\scripts\docker_push.ps1">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\win\project\microservice_template.csproj">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="content\src\os\win\solution\microservice_template.sln">
+          <IncludeInPackage>true</IncludeInPackage>
+    </None>
+    <None Include="scripts\install_template_local.sh" />
+    <None Include="content\src\microservice_template\Properties\launchSettings.json">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
+  <Target Name="AfterPack" AfterTargets="Pack"> 
+    <CallTarget Targets="Install_Package_Local" /> 
+  </Target>
+  <Target Name="Install_Package_Local">
+    <Exec Command="scripts/install_template_local.sh $(ProjectDir) $(Configuration) $(PackageId) $(PackageVersion)" />    
+  </Target>
 </Project>

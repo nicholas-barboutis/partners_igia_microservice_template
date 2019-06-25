@@ -1,0 +1,16 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "microservice_template", "microservice_template\microservice_template.csproj", "id_project"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        id_project.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        id_project.Debug|Any CPU.Build.0 = Debug|Any CPU
+        id_project.Release|Any CPU.ActiveCfg = Release|Any CPU
+        id_project.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+EndGlobal
