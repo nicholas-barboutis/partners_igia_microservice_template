@@ -27,6 +27,11 @@
                 "format": "B"
             }
         },
+        "template_name" : {
+            "type": "parameter",
+            "defaultValue": "partners_igia_microservice_template",
+            "replaces": "_template_name_"
+        },
         "os": {
             "type": "parameter",
             "datatype": "choice",

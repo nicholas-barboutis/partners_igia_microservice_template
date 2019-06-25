@@ -5,9 +5,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CEB32D9C-6FB9-43B0-B946-EE41BA86CDA5}</ProjectGuid>
-    <Description>Partners Igia microservice template</Description>
+    <Description>Partners igia microservice template</Description>
     <PackageId>partners_igia_microservice_template</PackageId>
-    <Authors>nb086</Authors>
+    <Authors>Nicholas Barboutis</Authors>
     <DevelopmentDependency>false</DevelopmentDependency>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <OutputType>Exe</OutputType>
@@ -39,6 +39,7 @@
     <Folder Include="content\.template_config\" />
     <Folder Include="content\src\" />
     <Folder Include="scripts\" />
+    <Folder Include="content\src\microservice_template\Properties\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="content\.template_config\template.json">
@@ -143,13 +144,13 @@
     <None Include="content\src\os\win\project\microservice_template.csproj">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
-    <None Include="content\src\os\win\properties\launchSettings.json">
-          <IncludeInPackage>true</IncludeInPackage>
-    </None>
     <None Include="content\src\os\win\solution\microservice_template.sln">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="scripts\install_template_local.sh" />
+    <None Include="content\src\microservice_template\Properties\launchSettings.json">
+      <IncludeInPackage>true</IncludeInPackage>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
   <Import Project="$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets" Condition="Exists('$(NuGetAuthoringPath)\NuGet.Packaging.Authoring.targets')" />
