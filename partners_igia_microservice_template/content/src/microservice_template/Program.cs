@@ -27,7 +27,7 @@ namespace microservice_template
 
 			if (environment == "Development")
 			{
-				string config_name = String_Helper.CheckString(Environment.GetEnvironmentVariable("CONFIGURATION_NAME"), "STANDALONE");
+				config_name = String_Helper.CheckString(Environment.GetEnvironmentVariable("CONFIGURATION_NAME"), "STANDALONE");
 			}
 
 			if (args.Length == 1)
@@ -67,9 +67,8 @@ namespace microservice_template
 
                             if (ip_ok)
                             {
-                                Console.Write(status);
-                                Dictionary<string, string> hip_dict = HIP_Helper.Create_Dictionary(instance_host, version);
-                                BuildWebHost_Hip(args, hip_dict).Run();
+                                Console.Write(status);                                
+                                BuildWebHost_Hip(args).Run();
                             }
                             else
                             {
@@ -87,23 +86,25 @@ namespace microservice_template
                         error_message = "Invalid Value " + sleep_param + " for JHIPSTER_SLEEP.";
                         Console.Write(error_message);
                     }
-
-
-                    break;
-                default:
-                    error_message = "CONFIGURATION_NAME:" + config_name + " is not valid";
+					if (Environment.OSVersion.Platform.ToString().StartsWith("Win"))
+					{
+						Console.Write("Press any key to exit"); Console.Read();
+					}
+					break;
+				default:
+					error_message = "CONFIGURATION_NAME:" + config_name + " is not valid";
                     Console.Write(error_message);
                     break;
             }
         }
 
-        public static IWebHost BuildWebHost_Hip(string[] args, Dictionary<string, string> hip_dict)
+        public static IWebHost BuildWebHost_Hip(string[] args)
         {
             IConfigurationRoot config_args = new ConfigurationBuilder().AddCommandLine(args).Build();
 
             IConfigurationRoot config = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddInMemoryCollection(hip_dict)
+                .AddEnvironmentVariables()
                 .AddConfigServer()
                 .Build();
 

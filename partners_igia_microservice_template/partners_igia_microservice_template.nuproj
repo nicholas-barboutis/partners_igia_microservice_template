@@ -15,7 +15,7 @@
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>partners_igia_microservice_template</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <ReleaseVersion>1.0.0.0</ReleaseVersion>
+    <ReleaseVersion>1.0.0.2</ReleaseVersion>
     <PackageVersion>$(ReleaseVersion)</PackageVersion>
     <Owners>Partners Healthcare</Owners>
     <Copyright>2019</Copyright>
