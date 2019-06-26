@@ -27,7 +27,7 @@ namespace microservice_template
 
 			if (environment == "Development")
 			{
-				string config_name = String_Helper.CheckString(Environment.GetEnvironmentVariable("CONFIGURATION_NAME"), "STANDALONE");
+				config_name = String_Helper.CheckString(Environment.GetEnvironmentVariable("CONFIGURATION_NAME"), "STANDALONE");
 			}
 
 			if (args.Length == 1)
