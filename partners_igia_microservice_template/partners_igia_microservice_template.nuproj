@@ -21,7 +21,7 @@
     <Copyright>2019</Copyright>
     <Title>Igia Micro Service Template</Title>
     <PackageProjectUrl>https://github.com/nicholas-barboutis/partners_igia_microservice_template</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/nicholas-barboutis/partners_igia_microservice_template/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/nicholas-barboutis/partners_igia_microservice_template/master/LICENSE.md</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -93,9 +93,6 @@
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="content\src\microservice_template\Program.cs">
-          <IncludeInPackage>true</IncludeInPackage>
-    </None>
-    <None Include="content\src\microservice_template\README.md">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="content\src\microservice_template\Startup.cs">
