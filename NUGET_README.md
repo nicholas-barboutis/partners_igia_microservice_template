@@ -17,7 +17,7 @@ Microservice architecture is a design pattern used to build an application using
 In order to use any dotnet new template it must first be installed. To install this template run the following command.
 
 ```bash
-dotnet new -i _template_name_
+dotnet new -i partners_igia_microservice_template
 ```
 
 ## Uninstalling or updating the template
