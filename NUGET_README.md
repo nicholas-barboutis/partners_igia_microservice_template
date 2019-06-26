@@ -1,4 +1,4 @@
-﻿# Dotnet microservice template
+﻿# Igia microservice template
 
 This template provides the means for creating a self-contained dotnet microservice to be used in the context of an application using the microservice architectural pattern.
 
