@@ -2,7 +2,7 @@
 
 The purpose of this project is to create a dotnet new template and package it for publishing to NuGet.  
 
-This project was used to create and piblish a template located at <https://www.nuget.org/packages/partners_igia_microservice_template/>.
+This project was used to create and publish a template located at <https://www.nuget.org/packages/partners_igia_microservice_template/>.
 
 For more information on dotnet new templates see <https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates>.
 
@@ -18,7 +18,8 @@ The project is made available under the [MIT License](LICENSE.md).
 
 ## Using this NuGet template
 
-For instructions on using this template see this [README](micro_service_template_nuget/content/src/micro_service_template/README.md)
+https://github.com/nicholas-barboutis/partners_igia_microservice_template/blob/master/partners_igia_microservice_template/content/src/microservice_template/README.md
+For instructions on using this template see this [README](<https://www.nuget.org/packages/partners_igia_microservice_template>)
 
 ## Creating a NuGet package with Visual Studio for Mac
 

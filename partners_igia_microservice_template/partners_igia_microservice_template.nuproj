@@ -95,9 +95,6 @@
     <None Include="content\src\microservice_template\Program.cs">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
-    <None Include="content\src\microservice_template\README.md">
-          <IncludeInPackage>true</IncludeInPackage>
-    </None>
     <None Include="content\src\microservice_template\Startup.cs">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
