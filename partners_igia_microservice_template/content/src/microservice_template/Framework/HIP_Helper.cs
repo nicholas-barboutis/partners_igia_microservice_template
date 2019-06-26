@@ -54,7 +54,7 @@ namespace Framework
             required_params.Add("SPRING__CLOUD__CONFIG__ENV");
             required_params.Add("SPRING__CLOUD__CONFIG__LABEL");
             required_params.Add("SPRING__PROFILES__ACTIVE");
-            required_params.Add("EUREKA__CLIENT__SERVICE__URL__DEFAULTZONE");
+            required_params.Add("EUREKA__CLIENT__SERVICEURL__DEFAULTZONE");
             required_params.Add("EUREKA__INSTANCE__PORT");
 
             foreach (string param in required_params)

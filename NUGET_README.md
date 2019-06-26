@@ -57,6 +57,14 @@ The microservice runs in two modes Default Mode, Docker Mode, Standalone Mode. U
 To run in standalone mode set this value STANDALONE. If not set to standalone it will run in Default mode.
 The port to listen for http traffic.
 
+**EUREKA__CLIENT__SERVICEURL**
+*Converts to required spring variable: spring:client:serviceUrl:defaultZone*.
+The url to the Eureka server. The url format includes the username and password used to connect to the eureka server.   For example when running the default jHipster register <http://admin:admin@localhost:8761/config>
+
+**EUREKA__INSTANCE__PORT**
+*Converts to required spring variable: spring:instance:port*.
+The port to listen for http traffic.
+
 **SPRING__CLOUD__CONFIG__URI**
 *Converts to required spring variable: spring:cloud:config:uri*.
 The url to the Spring Cloud Config Server using the format. The format of the url includes the username and password used to connect to the config server. For example when running the default jHipster registry <http://admin:admin@localhost:8761/config>
@@ -72,16 +80,11 @@ The name of the configuration environment to use.
 **SPRING__PROFILES__ACTIVE**
 *Converts to required spring variable: spring:profiles:active*.
 
-**EUREKA__INSTANCE__PORT**
-*Converts to required spring variable: spring:instance:port*.
-The port to listen for http traffic.
+
 
 **SPRING__CLOUD__CONFIG__LABEL**
 *Converts to required spring variable: spring:cloud:config:label*.
 
-**EUREKA__CLIENT__SERVICEURL__DEFAULTZONE**
-*Converts to required spring variable: spring:client:serviceUrl:defaultZone*.
-The url to the Eureka server. The url format includes the username and password used to connect to the eureka server.   For example when running the default jHipster register <http://admin:admin@localhost:8761/config>
 
 *Note: In the dotnet environment the double underscore (__) is changed to the colon (:). This conversion is required by Spring.*
 
@@ -102,4 +105,15 @@ To run:
 
 - __**Default Mode**__
 
-This mode requires registration and configuration. The following environment variables need to be set when running in Default mode.
+This mode attempts to register iteself to the defined registry and also attempts to retrieve configuration form the defined config server. 
+
+To run:
+
+1. Select the Default Configuration Environment
+2. Set EUREKA__CLIENT__SERVICEURL environment variable to a Neflix Eureka Registry. If running jHipster registry locally set to: http://username:password@localhost:8761/eureka
+3. Set EUREKA__INSTANCE__PORT environment variable to an used port. The microservice will be listening on this port. 
+4. Set SPRING__CLOUD__CONFIG__URI environment variable to a Spring Cloud Config Server. If running jHipster registry locally set to: http://username:password@localhost:8761/config 
+5. Set the following enviroment variable as desired or leave as is for default behavior(SPRING__APPLICATION__NAME, SPRING__CLOUD__CONFIG__ENV,SPRING__PROFILES__ACTIVE)
+4. Run the project.
+5. Navigate to <http://localhost:[EUREKA__INSTANCE__PORT}/swagger>.   
+
