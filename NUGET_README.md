@@ -49,7 +49,7 @@ This template can theoretically support a variety of micro-service platforms but
 
 ## Running the microservice
 
-The microservice runs in two modes Default Mode, Docker Mode, Standalone Mode. Unless running locally, your microservice should only run in Default mode. The following environment variables are configurable in the microservice.
+The microservice runs in two modes Default Mode and Standalone Mode. Unless running locally, your microservice should only run in Default mode. The following environment variables are configurable in the microservice.
 
 ### Environment Variables
 
