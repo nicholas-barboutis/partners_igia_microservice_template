@@ -18,8 +18,7 @@ The project is made available under the [MIT License](LICENSE.md).
 
 ## Using this NuGet template
 
-https://github.com/nicholas-barboutis/partners_igia_microservice_template/blob/master/partners_igia_microservice_template/content/src/microservice_template/README.md
-For instructions on using this template see this [README](<https://www.nuget.org/packages/partners_igia_microservice_template>)
+For instructions on using this template see this [README](<https://github.com/nicholas-barboutis/partners_igia_microservice_template/blob/master/partners_igia_microservice_template/content/src/microservice_template/README.md>)
 
 ## Creating a NuGet package with Visual Studio for Mac
 
