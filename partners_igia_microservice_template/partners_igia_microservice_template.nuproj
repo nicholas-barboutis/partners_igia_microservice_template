@@ -17,6 +17,11 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <ReleaseVersion>1.0.0.0</ReleaseVersion>
     <PackageVersion>$(ReleaseVersion)</PackageVersion>
+    <Owners>Partners Healthcare</Owners>
+    <Copyright>2019</Copyright>
+    <Title>Igia Micro Service Template</Title>
+    <PackageProjectUrl>https://github.com/nicholas-barboutis/partners_igia_microservice_template</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/nicholas-barboutis/partners_igia_microservice_template/blob/master/LICENSE.md</PackageLicenseUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
