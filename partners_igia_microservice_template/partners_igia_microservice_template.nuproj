@@ -71,7 +71,7 @@
     <None Include="content\src\microservice_template\Framework\Exception_Helper.cs">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
-    <None Include="content\src\microservice_template\Framework\HIP_Helper.cs">
+    <None Include="content\src\microservice_template\Framework\Igia_Helper.cs">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="content\src\microservice_template\Framework\Service_Config.cs">
