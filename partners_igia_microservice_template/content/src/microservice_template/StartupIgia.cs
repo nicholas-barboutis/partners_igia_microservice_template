@@ -13,9 +13,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace microservice_template
 { 
-    public class StartupHip
+    public class StartupIgia
     {
-        public StartupHip(IConfiguration configuration)
+        public StartupIgia(IConfiguration configuration)
         {
             Configuration = configuration;
         }

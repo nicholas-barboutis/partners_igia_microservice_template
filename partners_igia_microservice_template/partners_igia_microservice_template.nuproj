@@ -15,7 +15,7 @@
     <UsePartialTypes>false</UsePartialTypes>
     <AssemblyName>partners_igia_microservice_template</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <ReleaseVersion>1.0.0.3</ReleaseVersion>
+    <ReleaseVersion>1.0.0.4</ReleaseVersion>
     <PackageVersion>$(ReleaseVersion)</PackageVersion>
     <Owners>Partners Healthcare</Owners>
     <Copyright>2019</Copyright>
@@ -98,7 +98,7 @@
     <None Include="content\src\microservice_template\Startup.cs">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
-    <None Include="content\src\microservice_template\StartupHip.cs">
+    <None Include="content\src\microservice_template\StartupIgia.cs">
           <IncludeInPackage>true</IncludeInPackage>
     </None>
     <None Include="content\src\microservice_template\web.config">
