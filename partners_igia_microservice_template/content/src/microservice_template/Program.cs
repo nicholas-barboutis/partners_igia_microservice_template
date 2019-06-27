@@ -56,19 +56,19 @@ namespace microservice_template
                         Console.WriteLine("The application will start in " + sleep + "s...");
                         Thread.Sleep(sleep * 1000);
 
-                        bool is_ok = HIP_Helper.Check_Environment(ref error_message);
+                        bool is_ok = Igia_Helper.Check_Environment(ref error_message);
 
                         if (is_ok)
                         {
                             string instance_host = "";
                             string status = "";
 
-                            bool ip_ok = HIP_Helper.GetLocalIPAddress(ref instance_host, ref status, ref error_message);
+                            bool ip_ok = Igia_Helper.GetLocalIPAddress(ref instance_host, ref status, ref error_message);
 
                             if (ip_ok)
                             {
                                 Console.Write(status);                                
-                                BuildWebHost_Hip(args).Run();
+                                BuildWebHost_Igia(args).Run();
                             }
                             else
                             {
@@ -98,7 +98,7 @@ namespace microservice_template
             }
         }
 
-        public static IWebHost BuildWebHost_Hip(string[] args)
+        public static IWebHost BuildWebHost_Igia(string[] args)
         {
             IConfigurationRoot config_args = new ConfigurationBuilder().AddCommandLine(args).Build();
 
@@ -116,7 +116,7 @@ namespace microservice_template
            .UseUrls("http://0.0.0.0:" + instance_port)
            .UseContentRoot(Directory.GetCurrentDirectory())
            .UseConfiguration(config)
-           .UseStartup<StartupHip>()
+           .UseStartup<StartupIgia>()
            .Build();
 
 
