@@ -8,25 +8,43 @@ For more information on igia see <https://igia.github.io>.
 
 For more information on jHipster see: <https://www.jhipster.tech>.
 
+For more information on dotnet templating see: <https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates>
+
 ## Microservice architecture
 
 Microservice architecture is a design pattern used to build an application using self-contained distributed services.
 
 ## Installing the Template
 
-In order to use any dotnet new template it must first be installed. To install this template run the following command.
+In order to use any dotnet new template it must first be installed. To install this template run the following command. This template only needs to be installed once per machine.
 
 ```bash
 dotnet new -i partners_igia_microservice_template
 ```
 
-## Uninstalling or updating the template
+## Unistalling the Template
+
+In order to use any dotnet new template it must first be installed. To install this template run the following command.
+
+```bash
+dotnet new -u partners_igia_microservice_template
+```
+
+## Updating the template
 
 In order to update the template, first uninstall the existing template then run the install command again.
 
 ```bash
 dotnet new -u partners_igia_microservice_template
 dotnet new -i partners_igia_microservice_template
+```
+
+## Create an instance of the template
+
+Once the template installed, an new project can be created uisng the template. To create a project form the tempalte use the following command replacing project_name with your desired name.
+
+```bash
+dotnet new igia_micro --name project_name
 ```
 
 ## Template Capabilities

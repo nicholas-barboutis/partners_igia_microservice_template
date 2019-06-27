@@ -30,7 +30,7 @@
                 "CONFIGURATION_NAME": "DEFAULT",
                 "EUREKA__INSTANCE__PORT": "9001",
                 "SPRING__PROFILES__ACTIVE": "prod,swagger",
-                "SPRING__APPLICATION__NAME": "xx",
+                "SPRING__APPLICATION__NAME": "microservice_template",
                 "SPRING__CLOUD__CONFIG__URI": "http://admin:admin@localhost:8761/config",
                 "SPRING__CLOUD__CONFIG__LABEL": "master"                
             }
